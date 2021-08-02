@@ -1,11 +1,11 @@
 version: '3.8'
 services:
   poa:
-    container_name: TBWG-NODE-00-RPC
-    image: ethereum/client-go
+    container_name: XCHAIN-NODE-00-RPC
+    image: ethereum/client-go:v1.10.3
     restart: always
     working_dir: /poa
-    hostname: TBWG-NODE-00-RPC
+    hostname: XCHAIN-NODE-00-RPC
     volumes:
       - $PWD:/poa
     ports:

@@ -22,6 +22,7 @@
 |---------------|-------------------|
 |docker         | 20.10.6 or higher |
 |docker-compose | 1.29.1 or higher  |
+|geth  | ethereum/client-go:v1.10.3 |
 
 # Install docker and docker-compose
 ```

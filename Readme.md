@@ -15,14 +15,14 @@
 |OS       | Ubuntu 20.04 LTS |
 |CPU      |vCPU 8 Cores      |
 |RAM      |16 GB             |
-|DISK SSD | 200 GB           |
+|DISK SSD | 500 GB           |
 
 # รายละเอียด Software Requirements
 | Software      | Version           |
 |---------------|-------------------|
 |docker         | 20.10.6 or higher |
 |docker-compose | 1.29.1 or higher  |
-|geth  | ethereum/client-go:v1.10.3 |
+|geth  | ethereum/client-go:v1.10.14|
 
 # Install docker and docker-compose
 ```
@@ -52,3 +52,11 @@
 # docker-compose up -d
 # docker-compose logs -f
 ```
+
+## 5. Update Version GETH
+แก้ไขไฟล์ docker-compose.yaml บรรทัดที่ 5 image: ethereum/client-go:v1.10.11 ให้เปลี่ยนเป็น version ล่าสุดเช่น client-go:v1.10.14 เป็นต้น จากนั้นให้ save และทำการ pull images ใหม่และทำการ deploy
+```
+# docker-compose pull
+# docker-compose up -d
+```
+
